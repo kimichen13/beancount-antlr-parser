@@ -47,10 +47,6 @@ artifacts {
 
 tasks.named("sourcesJar").configure { dependsOn("generateGrammarSource") }
 
-signing {
-    sign(configurations.archives.get())
-}
-
 publishing {
 
     repositories {
@@ -100,4 +96,8 @@ publishing {
             }
         }
     }
+}
+
+signing {
+    sign(publishing.publications["Sonatype"])
 }
