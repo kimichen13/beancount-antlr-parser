@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "com.qqviaja.tools"
-version = "1.1-SNAPSHOT"
+version = "1.1"
 
 repositories {
     mavenCentral()
