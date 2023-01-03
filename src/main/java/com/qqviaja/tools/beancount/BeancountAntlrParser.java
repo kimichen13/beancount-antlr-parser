@@ -17,6 +17,12 @@ import org.antlr.v4.runtime.tree.ParseTreeWalker;
  */
 public class BeancountAntlrParser {
 
+    /**
+     * Parser input to Beancount {@link Expense} entity.
+     *
+     * @param input parse string
+     * @return {@link Expense} Entity if error will return <code>null</code>.
+     */
     public static Expense parser(String input) {
         final BeancountExpenseListener expenseListener = new BeancountExpenseListener();
         try {

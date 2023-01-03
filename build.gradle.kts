@@ -47,6 +47,10 @@ artifacts {
 
 tasks.named("sourcesJar").configure { dependsOn("generateGrammarSource") }
 
+tasks.withType<GenerateModuleMetadata> {
+    enabled = false
+}
+
 publishing {
 
     repositories {
