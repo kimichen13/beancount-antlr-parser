@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "com.qqviaja.tools"
-version = "1.0"
+version = "1.1"
 
 repositories {
     mavenCentral()
@@ -46,6 +46,10 @@ artifacts {
 }
 
 tasks.named("sourcesJar").configure { dependsOn("generateGrammarSource") }
+
+tasks.withType<GenerateModuleMetadata> {
+    enabled = false
+}
 
 publishing {
 

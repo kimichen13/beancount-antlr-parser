@@ -21,10 +21,10 @@ directive
    ;
 
 expense
-   : pn = payeeNarration amount account EOL
-   | date = DATE pn = payeeNarration amount account EOL
-   | pn = payeeNarration actualAmount accountWithDiscount EOL
-   | date = DATE pn = payeeNarration actualAmount accountWithDiscount EOL
+   : pn = payeeNarration amount account EOF
+   | date = DATE pn = payeeNarration amount account EOF
+   | pn = payeeNarration actualAmount accountWithDiscount EOF
+   | date = DATE pn = payeeNarration actualAmount accountWithDiscount EOF
    ;
 
 payeeNarration
