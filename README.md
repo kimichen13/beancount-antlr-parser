@@ -22,7 +22,7 @@ dependencies {
 
 ### Usage
 
-Use [`BeancountAntlrParser#parser`](https://github.com/kimichen13/beancount-antlr-parser/blob/ea1703f3ca55347140a883710524d654093ac5bc/src/main/java/com/qqviaja/tools/beancount/BeancountAntlrParser.java#L26) to parse input to [`Expense`](https://github.com/kimichen13/beancount-antlr-parser/blob/ea1703f3ca55347140a883710524d654093ac5bc/src/main/java/com/qqviaja/tools/beancount/entity/Expense.java#L20) entity.
+Use [`BeancountAntlrParser#parser`](https://github.com/kimichen13/beancount-antlr-parser/blob/0ebaed49c98db3d660587ec58db42ba4319ad1cc/src/main/java/com/qqviaja/tools/beancount/BeancountAntlrParser.java#L26) to parse input to [`Expense`](https://github.com/kimichen13/beancount-antlr-parser/blob/ea1703f3ca55347140a883710524d654093ac5bc/src/main/java/com/qqviaja/tools/beancount/entity/Expense.java#L20) entity.
 
 If any exception, it will return `null`.
 
